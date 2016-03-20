@@ -1,0 +1,3 @@
+MySQL database name:a4884602_wikidic
+MySQL user name:a4884602_root
+Password for MySQL user:wikidic19

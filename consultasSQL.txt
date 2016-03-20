@@ -1,0 +1,18 @@
+CREATE TABLE  `curso` (
+ `curso_id` INT( 11 ) UNSIGNED NOT NULL AUTO_INCREMENT 
+PRIMARY KEY ,
+ `curso` VARCHAR( 11 ) NOT NULL ,
+ `clave` VARCHAR( 11 ) NOT NULL
+) ENGINE = MYISAM ;
+
+
+---------------------------------------------------------
+
+CREATE TABLE Orders
+(
+O_Id int NOT NULL,
+OrderNo int NOT NULL,
+P_Id int,
+PRIMARY KEY (O_Id),
+FOREIGN KEY (P_Id) REFERENCES Persons(P_Id)
+)

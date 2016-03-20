@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--para que se pueda abrir en chrome-->
+	<script type="text/javascript" 
+	src="https://ajax.googleapis.com/ajax/libs/
+	jquery/1.12.0/jquery.min.js"></script>
+	<!--scritps de Jquery-->
+	<script type="text/javascript" 
+	scr="jquery.mobile-1.4.5/jquery-2.1.3.min.js">
+	</script>
+	<script type="text/javascript" 
+	scr="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js">
+	</script>
+	<link rel="stylesheet" type="text/css" 
+	href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" 
+	href="css/css-login.css">
+
+	<title></title>
+</head>
+<body>
+	<div data-role="page">
+
+		<div data-role="header" id="header"></div>
+		<div data-role="main" class="ui-content">
+			<h1>Bienvenido a Wiki-dictionary<h1/>
+				
+				<?php
+				 session_start();
+				 echo "<h4>".$_SESSION['username']."</h4>";
+				?>
+		</div>
+		<div data-role="footer" id=" footer"></div>
+	</div>
+
+</body>
+</html>
