@@ -1,0 +1,48 @@
+<DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<script type="text/javascript" src="jquery.mobile-1.4.5/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>		
+		
+		<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/css-login.css">
+		
+
+	<title>Login</title>
+</head>
+<body>
+	<div data-role="page">
+
+		<div data-role="header" id="header"></div>
+		<div data-role="main" class="ui-content">
+			<form action="login.php" method="post" data-ajax="false">
+
+				<div class="margin">
+					<legend id="legend">Sign in on Wiki-dictionary</legend>	<br><br>
+					
+					<label for ="email" id="e-mail">email address</label>
+					<input type="email" name="email" id="email" placeholder="example@unisangil.edu.co" ><br>
+					<label for ="pass">Password</label>
+					<input type="password" id="pass" name="password"><br>
+					<input  id ="submit" type="submit" value="Sign in">
+					
+				</div>
+
+					<br>			
+					<a href="registro.html" id="link">Create an account</a>
+
+			</form>
+
+
+		</div>
+		<div data-role="footer" id="footer"></div>
+
+
+
+	</div>
+	
+</body>
+</html>
